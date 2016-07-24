@@ -1,0 +1,15 @@
+.slide
+{
+	padding-top: 20px;
+}
+
+.layout
+{
+
+}
+
+.layout__row
+{
+	display: flex;
+	flex-direction: row;
+}
