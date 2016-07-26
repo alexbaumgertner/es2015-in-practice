@@ -202,9 +202,43 @@
 	<section class="slide">
 	    <h2>Строки: шаблоны, Юникод</h2>
 
-	    <p></p>
+		<h3>Новый вид кавычек для строк:</h3>
+		<ul>
+			<li>разрешён перевод строки</li>
+			<li>вставка выражений при помощи <code>${…}</code></li>
+			<li>своя функция шаблонизации</li>
+		</ul>
+
+		<h3>Юникод:</h3>
+		<ul>
+			<li>
+				правильная работа с 4-х байтными символами (например, иероглифы)
+				<ul>
+					<li>
+						<code>codePointAt()</code>
+					</li>
+					<li>
+						<code>fromCodePoint()</code>
+					</li>
+				</ul>
+			</li>
+		</ul>
 	</section>
 	<!-- Строки: шаблоны, Юникод (end) -->
+
+	<!-- Строки_2: шаблоны, Юникод (begin) -->
+	<section class="slide">
+		<h2>Строки: шаблоны, Юникод</h2>
+
+		<h3>Добавлены методы:</h3>
+		<ul style="font-size: 0.7em;">
+			<li><code>repeat(count)</code>: повторение <code>count</code> раз.</li>
+			<li><code>startsWith(searchString[, position])</code>: проверка — начинается ли с <code>searchString</code></li>
+			<li><code>includes(searchString[, position])</code>: поиск внутри <code>searchString</code></li>
+			<li><code>endsWith(searchString[, position])</code>: проверка — заканчивается ли с <code>searchString</code></li>
+		</ul>
+	</section>
+	<!-- Строки_2: шаблоны, Юникод (end) -->
 
 
 	<!-- Стрелочные функции (begin) -->
