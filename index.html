@@ -125,6 +125,53 @@
 	</section>
 
 
+	<!-- Stages (begin) -->
+	<section class="slide">
+	    <h2>Stages</h2>
+
+		<p>Этапы (<a href="http://tc39.github.io/process-document/">stages</a>) разработки Стандарта:</p>
+
+		<table>
+			<tr>
+				<td>0</td>
+				<td>Strawman</td>
+				<td>свободные мысли и желания</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Proposals</td>
+				<td>предложения к рассмотрению</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Draft</td>
+				<td>черновик спецификации</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Candidate</td>
+				<td>спецификация для обсуждения</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Finished</td>
+				<td>законченный вариант для включения в стандарт</td>
+			</tr>
+		</table>
+
+
+		<p><a href="http://www.2ality.com/2015/11/tc39-process.html">The TC39 process for ECMAScript features</a></p>
+	</section>
+	<!-- Stages (end) -->
+
+
+	<!-- Stages Babel (begin) -->
+	<section class="slide">
+		<img src="./pictures/babel-stages.png" alt="babel-stages" class="cover">
+	</section>
+	<!-- Stages Babel (end) -->
+
+
 	<section class="slide">
 		<h2 class="shout">основы</h2>
 	</section>
@@ -135,7 +182,17 @@
 	<section class="slide">
 	    <h2>Объявления переменных: let, const</h2>
 
-	    <p></p>
+	    <h3><code>let</code> — правильный <code>var</code>:</h3>
+		<ul>
+			<li>Область видимости переменной блок, а не функция;</li>
+			<li>Существует только после объявления, а не <code>undefined</code> по умолчанию;</li>
+			<li>Создаётся на каждую итерацию цикла</li>
+		</ul>
+
+		<h3><code>const</code> — настоящая константа</h3>
+		<ul>
+			<li>нельзя изменить после присвоения</li>
+		</ul>
 	</section>
 	<!-- Объявления переменных: let, const (end) -->
 
@@ -145,9 +202,43 @@
 	<section class="slide">
 	    <h2>Строки: шаблоны, Юникод</h2>
 
-	    <p></p>
+		<h3>Новый вид кавычек для строк:</h3>
+		<ul>
+			<li>разрешён перевод строки</li>
+			<li>вставка выражений при помощи <code>${…}</code></li>
+			<li>своя функция шаблонизации</li>
+		</ul>
+
+		<h3>Юникод:</h3>
+		<ul>
+			<li>
+				правильная работа с 4-х байтными символами (например, иероглифы)
+				<ul>
+					<li>
+						<code>codePointAt()</code>
+					</li>
+					<li>
+						<code>fromCodePoint()</code>
+					</li>
+				</ul>
+			</li>
+		</ul>
 	</section>
 	<!-- Строки: шаблоны, Юникод (end) -->
+
+	<!-- Строки_2: шаблоны, Юникод (begin) -->
+	<section class="slide">
+		<h2>Строки: шаблоны, Юникод</h2>
+
+		<h3>Добавлены методы:</h3>
+		<ul style="font-size: 0.7em;">
+			<li><code>repeat(count)</code>: повторение <code>count</code> раз.</li>
+			<li><code>startsWith(searchString[, position])</code>: проверка — начинается ли с <code>searchString</code></li>
+			<li><code>includes(searchString[, position])</code>: поиск внутри <code>searchString</code></li>
+			<li><code>endsWith(searchString[, position])</code>: проверка — заканчивается ли с <code>searchString</code></li>
+		</ul>
+	</section>
+	<!-- Строки_2: шаблоны, Юникод (end) -->
 
 
 	<!-- Стрелочные функции (begin) -->
